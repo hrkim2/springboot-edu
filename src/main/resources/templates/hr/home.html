@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <script src = "/js/hr/home.js"></script>
+</head>
+<body>
+    <span>INPUT 1</span>
+    <div th:each="input : ${input1}">
+        <button th:text="${input}"
+                th:onclick="getList([[${input}]])"/>
+    </div>
+    <div>
+        ERROR TEST
+        <button th:text="error" th:onclick="getList('')"/>
+    </div>
+    <span>INPUT 2</span>
+    <div>
+        <input type="text" id="input2" value=""/>
+    </div>
+    <span>INPUT 3</span>
+    <div id="input3List">
+
+    </div>
+    <span>POST TEST</span>
+    <div>
+        <button th:text="submit"
+                th:onclick="postTest()"/>
+    </div>
+</body>
+</html>

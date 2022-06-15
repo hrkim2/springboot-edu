@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+header, main, footer{
+    width: 100%;
+}
+header {
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    border-bottom: 1px solid tomato;
+}
+main{
+    position: absolute;
+    top: 41px;
+}
+footer{
+    line-height: 80px;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid tomato;
+}
